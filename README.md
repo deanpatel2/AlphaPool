@@ -20,6 +20,9 @@ Navigate to base route URI in a browser: http://localhost:8001/.
 
 If you see a page welcoming you to the Alphapool API, you have spun up the service correctly!
 
+## DEMO VIDEO
+
+Please watch the demo for this application here: []. 
 
 
 

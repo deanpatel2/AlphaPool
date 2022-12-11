@@ -9,18 +9,9 @@ def get_all_checkpoints():
     query = """SELECT city as label, loc_id as value FROM CheckpointLocation"""
     return run_select_query(query)
 
-@ride_blueprint.route('/rides')
-def get_all_rides():
-    query = """SELECT * FROM Ride"""
-    return run_select_query(query)
 @ride_blueprint.route('/riders')
 def get_all_riders():
     query = """SELECT firstName as label, rider_id as value FROM Rider"""
-    return run_select_query(query)
-
-@ride_blueprint.route('/confirmed_rides')
-def get_all_confirmed_rides():
-    query = """SELECT * FROM RideRider"""
     return run_select_query(query)
 
 @ride_blueprint.route('/<origin_id>/<destination_id>/<date>/<passengers>')
