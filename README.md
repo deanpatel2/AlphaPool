@@ -14,11 +14,11 @@ This repo contains a boilerplate setup for spinning up 2 docker containers:
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
 
-## For setting up a Conda Web-Dev environment:
+## Test
 
-1. `conda create -n webdev python=3.9`
-1. `conda activate webdev`
-1. `pip install flask flask-mysql flask-restful cryptography flask-login`
+Navigate to base route URI in a browser: http://localhost:8001/.
+
+If you see a page welcoming you to the Alphapool API, you have spun up the service correctly!
 
 
 
